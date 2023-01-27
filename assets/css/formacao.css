@@ -1,0 +1,75 @@
+.formacao {
+  background-color: #141414;
+}
+
+.formacao-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 1200px;
+  gap: 100px;
+  padding: 20px 40px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.formacao .subtitulo {
+  color: #000000;
+}
+
+.formacao-texto {
+  font-size: 1.2rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  color: #a3a3a3;
+}
+
+.faculdade-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 200px;
+  background-color: #000000;
+  color: #fff;
+  padding: 20px;
+  position: relative;
+}
+
+.faculdade {
+  color: #fff;
+}
+
+.faculdade-lista span {
+  font-size: 0.8rem;
+  color: #a3a3a3;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
+
+.faculdade-lista::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#b6f829, #67dd0a);
+  position: absolute;
+  top: 20px;
+  left: -4px;
+}
+
+@media (max-width: 800px) {
+  .formacao-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .formacao-texto {
+    margin-top: 0;
+  }
+
+  .faculdade-lista {
+    margin-bottom: 40px;
+  }
+}
